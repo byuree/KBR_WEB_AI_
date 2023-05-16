@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Layout</title>
+
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+
+        header {
+            background-color: black;
+            height: 80px;
+
+        }
+
+        nav {}
+        nav a {
+            text-decoration: none;
+            color: white;
+            float: left;
+            display: block;
+            width: 100px;
+            height: 100%;
+            padding: 10px 20px;
+            line-height: 60px; 
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: cornflowerblue;
+        }
+
+        section {
+            margin: 0 auto;
+            width: 1024px;
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 10px;
+            min-height: 200px;
+        }
+
+        footer {
+            background-color: lightgray;
+            min-height: 80px;
+        }
+
+        footer .copy {
+            float: left;
+            line-height: 80px;
+            padding: 0 20px;
+
+        }
+
+        footer .family {
+            float: right;
+            line-height: 80px;
+            min-width: 120px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="http://www.naver.com">네이버</a>
+            <a href="http://www.kakao.com">카카오</a>
+            <a href="http://www.youtube.com">유튜브</a>
+        </nav>
+    </header>
+    <section>
+        <h1>My Page</h1>
+        <p>My Page에 오신걸 환영합니다</p>
+    </section>
+
+    <section>
+        <h1>2번째 섹션</h1>
+        <p>2번째 영역 입니다</p>
+        <article>
+            가득 이네들은 속의 덮어 이름과, 봅니다. 이국 이런 까닭이요, 많은 이 부끄러운 쓸쓸함과 어머님, 있습니다. 나는 소학교 나의 아스라히 별이 있습니다. 하늘에는 나는 하나에 슬퍼하는 별
+            봅니다. 가을로 별 무성할 이런 써 아름다운 멀리 것은 까닭입니다. 헤일 아름다운 토끼, 무성할 멀리 오면 옥 계십니다. 애기 걱정도 별 까닭입니다.
+        </article>
+    </section>
+
+    <section>
+        <h1>3번째 섹션</h1>
+        <p>3번째 영역 입니다</p>
+    </section>
+
+    <footer> <!-- ㅇ 한자 -> ⓒ -->
+        <p class="copy">Copyright ⓒ STELLA CLASS. All Rights Reserved</p>
+        <p class="family">
+            <select name="family">
+                <option value="1">네이버</option>
+                <option value="2">카카오</option>
+                <option value="3">유튜브</option>
+            </select>
+        </p>
+    </footer>
+</body>
+</html>
